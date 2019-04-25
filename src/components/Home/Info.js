@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Title from "../Globals/Title"
 
-function Info({}) {
+function Info({ buttonText, link }) {
   return (
     <section className="py-5">
       <div className="container">
@@ -17,9 +17,9 @@ function Info({}) {
               commodi Iste pariatur libero rerum sed blanditiis amet Cupiditate
               voluptas velit consequatur minus at quasi Dolor repellat fugiat!
             </p>
-            <Link to="/about/">
+            <Link to={link}>
               <button className="btn text-uppercase btn-yellow">
-                about page
+                {buttonText}
               </button>
             </Link>
           </div>
